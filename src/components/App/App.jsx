@@ -1,28 +1,29 @@
 import React from 'react';
-import logo from '../../icons/logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import styles from './App.module.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Header from '../Header/Header';
+import Main from '../../pages/Main/Main';
+import About from '../../pages/About/About';
+import Experience from '../../pages/Experience/Experience';
+import Projects from '../../pages/Projects/Projects';
+import Goals from '../../pages/Goals/Goals';
+import Contact from '../../pages/Contact/Contact';
+import NotFound from '../../pages/NotFound/NotFound';
+
+const App = () => (
+  <div className={styles.App}>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Main />} end />
+      <Route path="/about" element={<About />} />
+      <Route path="/experience" element={<Experience />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/goals" element={<Goals />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </div>
+);
 
 export default App;

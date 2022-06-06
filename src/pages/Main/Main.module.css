@@ -1,0 +1,63 @@
+.Main {
+  width: 70vw;
+  height: 100vh;
+  background-color: var(--black);
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.Container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.InformationContainer {
+  min-height: 50vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.Title {
+  font-family: var(--header-font);
+  letter-spacing: 0.08em;
+  font-size: 2.6em;
+}
+
+.Name {
+  color: var(--accent);
+  font-family: var(--handwriting-font);
+  font-size: 2em;
+  letter-spacing: 0;
+}
+
+.MainInformation {
+  min-height: 20vh;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.MainInformationPoint {
+  text-align: start;
+}
+
+.MainInformationPoint:last-child {
+  padding-bottom: 0;
+}
+
+.ExternalLink {
+  text-decoration: none;
+  outline: none;
+  color: var(--accent);
+  transition: background-color 1s ease-out 50ms, color 1s ease-out 50ms;
+}
+
+.ExternalLink:hover {
+  background-color: #fff;
+  color: #000;
+}

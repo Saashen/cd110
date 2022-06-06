@@ -1,0 +1,8 @@
+.App {
+  display: flex;
+  height: 100vh;
+  font-family: var(--regular-font);
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.5;
+}

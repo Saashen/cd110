@@ -1,0 +1,8 @@
+:root {
+  --regular-font: 'Montserrat', sans-serif;
+  --header-font: 'Bebas Neue', sans-serif;
+  --handwriting-font: 'Ms Madi', serif;
+  --black: #1c1c1e;
+  --accent: #2196F3;
+  --container-width: 60vw;
+}

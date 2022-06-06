@@ -1,0 +1,33 @@
+.Navigation {
+  display: flex;
+  flex-flow: column;
+  height: 50%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.Link {
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-out 30ms, color 0.5s ease-out 30ms;
+  outline: none;
+  animation-name: navigation;
+}
+
+.Link:hover,
+.Link:focus {
+  background-color: var(--accent);
+}
+
+.ActiveLink {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  transition: all 1s ease-out 30ms;
+  transform: scale(1.2);
+  outline: none;
+}
