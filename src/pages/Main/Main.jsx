@@ -23,7 +23,6 @@ function Main() {
             Greetings, I&apos;m
             <span className={styles.Name}> Oleksandra</span>
           </h1>
-
           <ul className={styles.MainInformation}>
             <li className={styles.MainInformationPoint}>
               B. Sc. Computer Science student at&nbsp;
@@ -49,6 +48,10 @@ function Main() {
               , a company that creates Smart Vehicle Architecture and is one of
               the world&apos;s leading suppliers to the automotive industry
             </li>
+            <li className={styles.MainInformationPoint}>
+              I like to create useful things and to get recognition for them
+            </li>
+            <li>Currently in Germany</li>
           </ul>
         </div>
       </div>

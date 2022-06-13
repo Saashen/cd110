@@ -1,5 +1,5 @@
 .Main {
-  width: 70vw;
+  width: 75vw;
   height: 100vh;
   background-color: var(--black);
   color: #fff;
@@ -35,11 +35,12 @@
 }
 
 .MainInformation {
-  min-height: 20vh;
+  min-height: 40vh;
   display: flex;
   flex-flow: column;
   align-items: start;
   justify-content: space-around;
+  font-size: 1em;
 }
 
 .MainInformationPoint {

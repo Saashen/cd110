@@ -5,7 +5,7 @@ import styles from './App.module.css';
 import Header from '../Header/Header';
 import Main from '../../pages/Main/Main';
 import About from '../../pages/About/About';
-import Experience from '../../pages/Experience/Experience';
+import Timeline from '../../pages/Timeline/Timeline';
 import Projects from '../../pages/Projects/Projects';
 import Goals from '../../pages/Goals/Goals';
 import Contact from '../../pages/Contact/Contact';
@@ -17,7 +17,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Main />} end />
       <Route path="/about" element={<About />} />
-      <Route path="/experience" element={<Experience />} />
+      <Route path="/timeline" element={<Timeline />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/goals" element={<Goals />} />
       <Route path="/contact" element={<Contact />} />

@@ -1,0 +1,25 @@
+.Contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.Link {
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.5s ease-out 30ms, color 0.5s ease-out 30ms;
+  outline: none;
+  animation-name: navigation;
+  display: flex;
+  align-items: center;
+}
+
