@@ -14,17 +14,25 @@
   margin: 0 auto;
 }
 
-.InformationContainer {
-  min-height: 50vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
-
 .Title {
   font-family: var(--header-font);
   letter-spacing: 0.08em;
   font-size: 2.6em;
+  margin: 0;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.TitleTransition {
+  font-family: var(--header-font);
+  letter-spacing: 0.08em;
+  font-size: 2.6em;
+  opacity: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+  transform: translateX(0);
+  transition: opacity 2000ms, transform 2000ms;
 }
 
 .Name {
@@ -35,30 +43,60 @@
 }
 
 .MainInformation {
-  min-height: 40vh;
+  min-height: 36vh;
   display: flex;
   flex-flow: column;
   align-items: start;
   justify-content: space-around;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .MainInformationPoint {
   text-align: start;
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .MainInformationPoint:last-child {
   padding-bottom: 0;
 }
 
+.MainInformationPointTransition {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1500ms, transform 1500ms;
+  transition-delay: 1000ms;
+}
+
+.MainInformationPointTransition:nth-child(2) {
+  transition-delay: 2200ms;
+}
+
+.MainInformationPointTransition:nth-child(3) {
+  transition-delay: 3400ms;
+}
+
+.MainInformationPointTransition:nth-child(4) {
+  transition-delay: 4500ms;
+}
+
 .ExternalLink {
   text-decoration: none;
   outline: none;
   color: var(--accent);
-  transition: background-color 1s ease-out 50ms, color 1s ease-out 50ms;
+  transition: background-color 0.7s ease-out 50ms, color 0.7s ease-out 50ms;
 }
 
 .ExternalLink:hover {
   background-color: #fff;
   color: #000;
+}
+
+.Germany {
+  display: inline-block;
+  align-self: center;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.4rem;
+  background: url(../../icons/germany.svg) no-repeat;
 }

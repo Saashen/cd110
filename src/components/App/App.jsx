@@ -7,7 +7,7 @@ import Main from '../../pages/Main/Main';
 import About from '../../pages/About/About';
 import Timeline from '../../pages/Timeline/Timeline';
 import Projects from '../../pages/Projects/Projects';
-import Goals from '../../pages/Goals/Goals';
+// import Goals from '../../pages/Goals/Goals';
 import Contact from '../../pages/Contact/Contact';
 import NotFound from '../../pages/NotFound/NotFound';
 
@@ -19,7 +19,7 @@ const App = () => (
       <Route path="/about" element={<About />} />
       <Route path="/timeline" element={<Timeline />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/goals" element={<Goals />} />
+      {/* <Route path="/goals" element={<Goals />} /> */}
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

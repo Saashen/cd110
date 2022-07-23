@@ -7,7 +7,7 @@
 }
 
 .Container {
-  max-width: var(--container-width);
+  max-width: 70vw;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -17,6 +17,10 @@
 .SmallExperience {
   display: flex;
   align-items: center;
+  margin: 0.3rem 0;
+  padding: 0.2rem 1rem;
+  box-shadow: 0;
+  transition: box-shadow 0.4s;
 }
 
 .Title {
@@ -34,6 +38,10 @@
 
 .SmallInfo {
   padding-left: 1rem;
+}
+
+.SmallExperience:hover {
+  box-shadow: 0px 0px 6px 0.2px rgba(0, 0, 0, 0.5);
 }
 
 .SmallExperience:hover .Icon {

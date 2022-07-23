@@ -1,0 +1,43 @@
+.Container {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Link {
+  height: auto;
+  text-decoration: none;
+}
+
+.Screenshot {
+  max-width: 18rem;
+  box-shadow: 0px 0px 5px 0.4px rgba(0, 0, 0, 0.5);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Header {
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Text {
+  text-align: center;
+}
+
+.Link:hover .Header {
+  color: var(--accent);
+  transition: color 0.5s ease-out 30ms;
+}
+
+.Link:hover .Screenshot {
+  transform: scale(1.03);
+}
+
+.Link:hover {
+  cursor: pointer;
+}

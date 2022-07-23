@@ -27,7 +27,7 @@ const Timeline = () => (
     <div className={styles.Container}>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Apr 2022 - current ]</p>
-        <FiBriefcase size={20} className={styles.Icon} />
+        <FiBriefcase size={20} className={styles.Icon} title="Experience" />
         <div className={styles.SmallInfo}>
           <h3 className={styles.Title}>Frontend Developer</h3>
           <p>Aptiv</p>
@@ -35,15 +35,17 @@ const Timeline = () => (
       </div>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Sep 2021 - Current ]</p>
-        <FiMonitor size={20} className={styles.Icon} />
+        <FiMonitor size={20} className={styles.Icon} title="Courses" />
         <div className={styles.SmallInfo}>
-          <h3 className={styles.Title}>CS50&apos;s Introduction to Computer Science</h3>
+          <h3 className={styles.Title}>
+            CS50&apos;s Introduction to Computer Science
+          </h3>
           <p>HarvardX</p>
         </div>
       </div>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Apr 2021 ]</p>
-        <FiAward size={20} className={styles.Icon} />
+        <FiAward size={20} className={styles.Icon} title="Scholarship" />
         <div className={styles.SmallInfo}>
           <h3 className={styles.Title}>Deutschlandstipendium</h3>
           <p>Germany</p>
@@ -51,7 +53,7 @@ const Timeline = () => (
       </div>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Sep 2020 - Current ]</p>
-        <FiBook size={20} className={styles.Icon} />
+        <FiBook size={20} className={styles.Icon} title="Education" />
         <div className={styles.SmallInfo}>
           <h3 className={styles.Title}>B. Sc. Computer Science</h3>
           <p>IU International University of Applied Sciences</p>
@@ -59,7 +61,7 @@ const Timeline = () => (
       </div>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Mar 2020 - Oct 2020 ]</p>
-        <FiBriefcase size={20} className={styles.Icon} />
+        <FiBriefcase size={20} className={styles.Icon} title="Experience" />
         <div className={styles.SmallInfo}>
           <h3 className={styles.Title}>Frontend Developer</h3>
           <p>Freelance</p>
@@ -67,15 +69,15 @@ const Timeline = () => (
       </div>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Feb 2019 - Sep 2020 ]</p>
-        <FiMonitor size={20} className={styles.Icon} />
+        <FiMonitor size={20} className={styles.Icon} title="Courses" />
         <div className={styles.SmallInfo}>
-          <h3 className={styles.Title}>Full Stack Developer</h3>
+          <h3 className={styles.Title}>Full Stack Developer Certificate</h3>
           <p>GoIT</p>
         </div>
       </div>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Jun 2020 ]</p>
-        <FiAward size={20} className={styles.Icon} />
+        <FiAward size={20} className={styles.Icon} title="Certificate" />
         <div className={styles.SmallInfo}>
           <h3 className={styles.Title}>IELTS Academic 6.5</h3>
           <p>British Council</p>
@@ -83,7 +85,7 @@ const Timeline = () => (
       </div>
       <div className={styles.SmallExperience}>
         <p className={styles.Time}>[ Jan 2020 ]</p>
-        <FiAward size={20} className={styles.Icon} />
+        <FiAward size={20} className={styles.Icon} title="Certificate" />
         <div className={styles.SmallInfo}>
           <h3 className={styles.Title}>DELF B1</h3>
           <p>Institut Français</p>

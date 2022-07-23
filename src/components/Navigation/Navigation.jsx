@@ -13,12 +13,6 @@ const Navigation = () => (
     </NavLink>
     <NavLink
       className={({ isActive }) => (isActive ? styles.ActiveLink : styles.Link)}
-      to="/about"
-    >
-      About
-    </NavLink>
-    <NavLink
-      className={({ isActive }) => (isActive ? styles.ActiveLink : styles.Link)}
       to="/timeline"
     >
       Timeline
@@ -31,9 +25,9 @@ const Navigation = () => (
     </NavLink>
     <NavLink
       className={({ isActive }) => (isActive ? styles.ActiveLink : styles.Link)}
-      to="/goals"
+      to="/personality"
     >
-      Goals
+      Personality
     </NavLink>
     <NavLink
       className={({ isActive }) => (isActive ? styles.ActiveLink : styles.Link)}
