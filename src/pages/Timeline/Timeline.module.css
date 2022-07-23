@@ -12,20 +12,27 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .SmallExperience {
+  height: 3.4rem;
   display: flex;
   align-items: center;
   margin: 0.3rem 0;
-  padding: 0.2rem 1rem;
   box-shadow: 0;
   transition: box-shadow 0.4s;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  padding: 0 0.5rem;
+  cursor: pointer;
 }
 
 .Title {
   font-family: var(--header-font);
   letter-spacing: 0.1em;
+  text-align: start;
 }
 
 .Icon {
@@ -34,10 +41,16 @@
 
 .Time {
   min-width: 10.7rem;
+  text-align: start;
 }
 
 .SmallInfo {
   padding-left: 1rem;
+}
+
+.Caption {
+  text-align: start;
+  margin-top: 0.5rem;
 }
 
 .SmallExperience:hover {

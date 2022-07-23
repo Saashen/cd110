@@ -1,0 +1,40 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+  border: none;
+  outline: none;
+}
+
+.Modal {
+  width: auto;
+  height: auto;
+  min-width: 15rem;
+  min-height: 6rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.Title {
+  font-family: var(--header-font);
+  text-align: start;
+  margin-bottom: 0.7rem;
+}
+
+.Point {
+  font-family: var(--regular-font);
+  text-align: start;
+  font-size: 0.9em;
+  margin-top: 0.4rem;
+}
+
+.Margin {
+  padding-top: 1.2rem;
+}
